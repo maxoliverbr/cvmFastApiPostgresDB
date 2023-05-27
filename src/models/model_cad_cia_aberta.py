@@ -7,11 +7,11 @@ class CadCiaAberta(BaseModel):
     BAIRRO: Optional[str]
     BAIRRO_RESP: Optional[str]
     CATEG_REG: Optional[str]
-    CD_CVM: Optional[int]
+    CD_CVM: int
     CEP: Optional[int]
     CEP_RESP: Optional[int]
     CNPJ_AUDITOR: Optional[str]
-    CNPJ_CIA: Optional[str]
+    CNPJ_CIA: str
     COMPL: Optional[str]
     COMPL_RESP: Optional[str]
     CONTROLE_ACIONARIO: Optional[str]
@@ -19,7 +19,7 @@ class CadCiaAberta(BaseModel):
     DDD_FAX_RESP: Optional[str]
     DDD_TEL: Optional[str]
     DDD_TEL_RESP: Optional[str]
-    DENOM_COMERC: Optional[str]
+    DENOM_COMERC: str
     DENOM_SOCIAL: Optional[str]
     DT_CANCEL: Optional[str]
     DT_CONST: Optional[str]

@@ -1,4 +1,5 @@
 import uvicorn
+import logging
 from fastapi import FastAPI, Depends, status
 from routers import router_cad_cia_aberta
 from routers import router_cad_cia_estrang
@@ -16,4 +17,5 @@ def get_root():
 
 if __name__ == "__main__":
     # app.run(debug=True)
+
     uvicorn.run("main:app", port=5000, reload=True, access_log=False)

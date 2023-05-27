@@ -1,5 +1,5 @@
+import logging
 from typing import List
-
 from fastapi import FastAPI, Response, status, HTTPException, Depends, APIRouter
 from src.models.model_cad_cia_aberta import CadCiaAberta
 
